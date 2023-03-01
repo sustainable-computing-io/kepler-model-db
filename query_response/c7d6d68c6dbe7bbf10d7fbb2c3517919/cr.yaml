@@ -1,0 +1,248 @@
+apiVersion: cpe.cogadvisor.io/v1
+kind: Benchmark
+metadata:
+  annotations:
+    kubectl.kubernetes.io/last-applied-configuration: |
+      {"apiVersion":"cpe.cogadvisor.io/v1","kind":"Benchmark","metadata":{"annotations":{},"name":"coremark","namespace":"default"},"spec":{"benchmarkOperator":{"name":"none","namespace":"default"},"benchmarkSpec":"parallelism: 1\nbackoffLimit: 0\ntemplate:\n  spec:\n    containers:\n      - name: coremark\n        image: ghcr.io/sunya-ch/coremark:ubi\n        env:\n        - name: THREADNUM\n          value: \"4threads\"\n        command:\n        - sh\n        - -c\n        - ./coremark-${THREADNUM}.exe\n    restartPolicy: Never\n","iterationSpec":{"iterations":[{"location":".template.spec.containers[0].env[name=THREADNUM].value","name":"t","values":["8threads","16threads","32threads"]},{"location":".parallelism","name":"parallelism"}],"sequential":true},"parserKey":"coremark","repetition":3}}
+  creationTimestamp: "2023-02-24T03:13:47Z"
+  finalizers:
+  - finalizers.benchmark.cpe.cogadvisor.io
+  generation: 1
+  name: coremark
+  namespace: default
+  resourceVersion: "19165067"
+  uid: 2b8f41c2-d991-478f-bafe-07d02bee174d
+spec:
+  benchmarkOperator:
+    name: none
+    namespace: default
+  benchmarkSpec: |
+    parallelism: 1
+    backoffLimit: 0
+    template:
+      spec:
+        containers:
+          - name: coremark
+            image: ghcr.io/sunya-ch/coremark:ubi
+            env:
+            - name: THREADNUM
+              value: "4threads"
+            command:
+            - sh
+            - -c
+            - ./coremark-${THREADNUM}.exe
+        restartPolicy: Never
+  iterationSpec:
+    iterations:
+    - location: .template.spec.containers[0].env[name=THREADNUM].value
+      name: t
+      values:
+      - 8threads
+      - 16threads
+      - 32threads
+    - location: .parallelism
+      name: parallelism
+    sequential: true
+  parserKey: coremark
+  repetition: 3
+status:
+  bestResults:
+  - build: init
+    configurations: {}
+    performanceKey: iterations_per_sec
+    performanceValue: "191461.147880"
+    scenarioID: parallelism=1;t=8threads
+  - build: init
+    configurations: {}
+    performanceKey: iterations_per_sec
+    performanceValue: "349740.082830"
+    scenarioID: parallelism=1;t=16threads
+  - build: init
+    configurations: {}
+    performanceKey: iterations_per_sec
+    performanceValue: "589276.580317"
+    scenarioID: parallelism=1;t=32threads
+  - build: init
+    configurations: {}
+    performanceKey: iterations_per_sec
+    performanceValue: "101102.797842"
+    scenarioID: parallelism=1;t=4threads
+  hash:
+  - build: init
+    hash: "152377304"
+    iterations:
+      parallelism: "1"
+      t: 8threads
+    run: "0"
+  - build: init
+    hash: "385258259"
+    iterations:
+      parallelism: "1"
+      t: 16threads
+    run: "0"
+  - build: init
+    hash: "2615945765"
+    iterations:
+      parallelism: "1"
+      t: 32threads
+    run: "0"
+  - build: init
+    hash: "1209626772"
+    iterations:
+      parallelism: "1"
+      t: 4threads
+    run: "0"
+  - build: init
+    hash: "169154923"
+    iterations:
+      parallelism: "1"
+      t: 8threads
+    run: "1"
+  - build: init
+    hash: "368480640"
+    iterations:
+      parallelism: "1"
+      t: 16threads
+    run: "1"
+  - build: init
+    hash: "2599168146"
+    iterations:
+      parallelism: "1"
+      t: 32threads
+    run: "1"
+  - build: init
+    hash: "1226404391"
+    iterations:
+      parallelism: "1"
+      t: 4threads
+    run: "1"
+  - build: init
+    hash: "185932542"
+    iterations:
+      parallelism: "1"
+      t: 8threads
+    run: "2"
+  - build: init
+    hash: "418813497"
+    iterations:
+      parallelism: "1"
+      t: 16threads
+    run: "2"
+  - build: init
+    hash: "2582390527"
+    iterations:
+      parallelism: "1"
+      t: 32threads
+    run: "2"
+  - build: init
+    hash: "1243182010"
+    iterations:
+      parallelism: "1"
+      t: 4threads
+    run: "2"
+  jobCompleted: 12/12
+  results:
+  - build: init
+    configID: ""
+    configurations: {}
+    repetitions:
+    - job: coremark-cpeh-152377304
+      performanceKey: iterations_per_sec
+      performanceValue: "184533.763912"
+      pod: coremark-cpeh-152377304-4dtjh
+      pushedTime: 2023-02-24 03:14:13.711870086 +0000 UTC m=+162959.333762212
+      run: "0"
+    - job: coremark-cpeh-169154923
+      performanceKey: iterations_per_sec
+      performanceValue: "190782.805700"
+      pod: coremark-cpeh-169154923-db2tm
+      pushedTime: 2023-02-24 03:15:59.746525192 +0000 UTC m=+163065.368417350
+      run: "1"
+    - job: coremark-cpeh-185932542
+      performanceKey: iterations_per_sec
+      performanceValue: "199066.874028"
+      pod: coremark-cpeh-185932542-7r2cw
+      pushedTime: 2023-02-24 03:17:44.970771876 +0000 UTC m=+163170.592663965
+      run: "2"
+    scenarioID: parallelism=1;t=8threads
+    scenarios:
+      parallelism: "1"
+      t: 8threads
+  - build: init
+    configID: ""
+    configurations: {}
+    repetitions:
+    - job: coremark-cpeh-385258259
+      performanceKey: iterations_per_sec
+      performanceValue: "339180.666702"
+      pod: coremark-cpeh-385258259-kc8zb
+      pushedTime: 2023-02-24 03:14:40.586579812 +0000 UTC m=+162986.208471888
+      run: "0"
+    - job: coremark-cpeh-368480640
+      performanceKey: iterations_per_sec
+      performanceValue: "360299.498959"
+      pod: coremark-cpeh-368480640-8s4vq
+      pushedTime: 2023-02-24 03:16:25.798150024 +0000 UTC m=+163091.420042097
+      run: "1"
+    - job: coremark-cpeh-418813497
+      performanceKey: iterations_per_sec
+      performanceValue: "337534.940140"
+      pod: coremark-cpeh-418813497-m8zvz
+      pushedTime: 2023-02-24 03:18:12.024256005 +0000 UTC m=+163197.646148159
+      run: "2"
+    scenarioID: parallelism=1;t=16threads
+    scenarios:
+      parallelism: "1"
+      t: 16threads
+  - build: init
+    configID: ""
+    configurations: {}
+    repetitions:
+    - job: coremark-cpeh-2615945765
+      performanceKey: iterations_per_sec
+      performanceValue: "581923.986179"
+      pod: coremark-cpeh-2615945765-5czxg
+      pushedTime: 2023-02-24 03:15:10.654105288 +0000 UTC m=+163016.275997373
+      run: "0"
+    - job: coremark-cpeh-2599168146
+      performanceKey: iterations_per_sec
+      performanceValue: "572937.648270"
+      pod: coremark-cpeh-2599168146-r4bt6
+      pushedTime: 2023-02-24 03:16:56.867514008 +0000 UTC m=+163122.489406091
+      run: "1"
+    - job: coremark-cpeh-2582390527
+      performanceKey: iterations_per_sec
+      performanceValue: "612968.106503"
+      pod: coremark-cpeh-2582390527-z9s77
+      pushedTime: 2023-02-24 03:18:41.093605922 +0000 UTC m=+163226.715498008
+      run: "2"
+    scenarioID: parallelism=1;t=32threads
+    scenarios:
+      parallelism: "1"
+      t: 32threads
+  - build: init
+    configID: ""
+    configurations: {}
+    repetitions:
+    - job: coremark-cpeh-1209626772
+      performanceKey: iterations_per_sec
+      performanceValue: "99471.557352"
+      pod: coremark-cpeh-1209626772-w4r5k
+      pushedTime: 2023-02-24 03:15:34.703289296 +0000 UTC m=+163040.325181425
+      run: "0"
+    - job: coremark-cpeh-1226404391
+      performanceKey: iterations_per_sec
+      performanceValue: "102583.830224"
+      pod: coremark-cpeh-1226404391-qwprh
+      pushedTime: 2023-02-24 03:17:20.919803858 +0000 UTC m=+163146.541696031
+      run: "1"
+    - job: coremark-cpeh-1243182010
+      performanceKey: iterations_per_sec
+      performanceValue: "101253.005949"
+      pod: coremark-cpeh-1243182010-xdgss
+      pushedTime: 2023-02-24 03:19:05.149029481 +0000 UTC m=+163250.770921636
+      run: "2"
+    scenarioID: parallelism=1;t=4threads
+    scenarios:
+      parallelism: "1"
+      t: 4threads
