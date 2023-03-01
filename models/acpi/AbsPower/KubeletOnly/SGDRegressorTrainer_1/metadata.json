@@ -1,0 +1,1 @@
+{"model_name": "SGDRegressorTrainer_1", "model_class": "scikit", "model_file": "SGDRegressorTrainer_1.json", "features": ["kubelet_cpu_usage", "kubelet_memory_bytes"], "fe_files": [], "output_type": "AbsPower", "mae": 0.0}
