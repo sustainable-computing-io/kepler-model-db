@@ -1,0 +1,1 @@
+{"model_name": "GradientBoostingRegressorTrainer_1", "model_class": "scikit", "model_file": "GradientBoostingRegressorTrainer_1.json", "features": ["cache_miss", "cpu_cycles", "cpu_instructions"], "fe_files": [], "output_type": "AbsPower", "mae": 0.0}

@@ -1,0 +1,1 @@
+{"model_name": "SGDRegressorTrainer_1", "model_class": "scikit", "model_file": "SGDRegressorTrainer_1.json", "features": ["cache_miss", "cpu_cycles", "cpu_instructions"], "fe_files": [], "output_type": "DynPower", "mae": 0.0}

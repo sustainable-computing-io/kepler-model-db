@@ -1,0 +1,1 @@
+{"platform": {"model_file": "platform.pkl", "features": ["kubelet_cpu_usage", "kubelet_memory_bytes"], "fe_files": ["scaler.pkl"]}}
