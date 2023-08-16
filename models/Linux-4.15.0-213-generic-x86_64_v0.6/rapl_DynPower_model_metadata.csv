@@ -1,0 +1,7 @@
+,model_name,model_class,model_file,features,fe_files,output_type,mae,package_mae,core_mae,uncore_mae,dram_mae,feature_group
+2,KNeighborsRegressorTrainer_1,scikit,KNeighborsRegressorTrainer_1.json,"['kubelet_cpu_usage', 'kubelet_memory_bytes']",[],DynPower,138.2923059360747,109.41002815828188,138.2923059360747,138.2923059360747,17.64918493154066,KubeletOnly
+4,GradientBoostingRegressorTrainer_1,scikit,GradientBoostingRegressorTrainer_1.json,"['kubelet_cpu_usage', 'kubelet_memory_bytes']",[],DynPower,141.032246575345,123.90813862362596,141.032246575345,141.032246575345,16.176114418852308,KubeletOnly
+0,SGDRegressorTrainer_1,scikit,SGDRegressorTrainer_1.json,"['kubelet_cpu_usage', 'kubelet_memory_bytes']",[],DynPower,159.33900849334628,159.33900849334628,139.63602283105092,139.63602283105092,13.780256545680935,KubeletOnly
+5,PolynomialRegressionTrainer_1,scikit,PolynomialRegressionTrainer_1.json,"['kubelet_cpu_usage', 'kubelet_memory_bytes']",['poly_scaler.pkl'],DynPower,159.73475776460026,159.73475776460026,140.04898630137174,140.04898630137174,14.107454595184999,KubeletOnly
+3,LinearRegressionTrainer_1,scikit,LinearRegressionTrainer_1.json,"['kubelet_cpu_usage', 'kubelet_memory_bytes']",[],DynPower,161.77221582729106,161.77221582729106,138.22170776255786,138.22170776255786,12.518304424867955,KubeletOnly
+1,SVRRegressorTrainer_1,scikit,SVRRegressorTrainer_1.json,"['kubelet_cpu_usage', 'kubelet_memory_bytes']",[],DynPower,169.18099261717077,169.18099261717077,139.06814611872625,139.06814611872625,12.888723328947297,KubeletOnly
