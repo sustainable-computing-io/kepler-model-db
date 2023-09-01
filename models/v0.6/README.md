@@ -50,4 +50,4 @@ The pipeline in this folder is trained by Kepler model server towards v0.6.
 
 Machine ID|raw data|trained pipeline|collect time|last update time
 ---|---|---|---|---
-nx12|&check;|&check;|
+nx12|&check;|&check;|2023-08-28 19:26:30|2023-09-01 07:32:51

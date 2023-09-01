@@ -23,3 +23,5 @@ Power models are stored with the following file structure.
 
 Machine ID|CPU Architecture|CPU model (optional)|#sockets (optional)|OS|Kernel version
 ---|---|---|---|---|---
+nx12|x64|[Intel® Xeon® Processor E5-2667 v3](https://ark.intel.com/content/www/us/en/ark/products/83361/intel-xeon-processor-e52667-v3-20m-cache-3-20-ghz.html)|2|Ubuntu|5.15.0-78-generic
+

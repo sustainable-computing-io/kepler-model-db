@@ -1,0 +1,1 @@
+{"platform": {"All_Weights": {"Bias_Weight": 204.32111986281478, "Categorical_Variables": {}, "Numerical_Variables": {"kubelet_cpu_usage": {"mean": 7.212174166302607, "variance": 420.0275514159066, "weight": 42.00882926077421}, "kubelet_memory_bytes": {"mean": 22912587.379641764, "variance": 1.1963713956742662e+17, "weight": 2.4121529224357348}}}}}
