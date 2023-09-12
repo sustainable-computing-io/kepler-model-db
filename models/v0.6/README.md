@@ -1,53 +1,7 @@
-# Pre-release Build
-
-The pipeline in this folder is trained by Kepler model server towards v0.6.
-
-## Pipeline information
-
-- **Extractor:** DefaultExtractor
-- **Isolator:** MinIsolator
-- **Trainers:**
-    - SGDRegressorTrainer
-    - SVRRegressorTrainer
-    - KNeighborsRegressorTrainer
-    - LinearRegressionTrainer
-    - GradientBoostingRegressorTrainer
-    - Model PolynomialRegressionTrainer
-
-## Workload information
-
-- stressng
-- coremark
-    ```yaml
-        repetition: 5
-        iterationSpec:
-            iterations:
-            - name: thread
-            values:
-            - "4"
-            - "8"
-            - "16"
-            - "32"
-    ```
-- parsec
-    ```yaml
-        repetition: 1
-        interval: 10
-        iterationSpec:
-            iterations:
-            - name: input
-            values:
-            - "native"
-            - name: package
-            values:
-            - "bodytrack"
-            - "canneal"
-            - "raytrace"
-            - "ferret"
-    ```
+# v0.6 Build
 
 ## Trained pipelines
 
-Machine ID|raw data|trained pipeline|collect time|last update time
----|---|---|---|---
-nx12|&check;|&check;|2023-08-28 19:26:30|2023-09-01 07:32:51
+machine ID|trained pipeline|raw data|collect time|last update time|publisher|AbsPower (acpi)|AbsPower (rapl)|DynPower (acpi)|DynPower (rapl)
+---|---|---|---|---|---|---|---|---|---
+nx12|[std_v0.6](./.doc/std_v0.6.md)|&check;|2023-08-28 19:26:30|2023-09-01 07:32:51|[sunya-ch](https://github.com/sunya-ch)|[metadata list](./nx12/std_v0.6/acpi_AbsPower_model_metadata.csv)|[metadata list](./nx12/std_v0.6/rapl_AbsPower_model_metadata.csv)|[metadata list](./nx12/std_v0.6/acpi_DynPower_model_metadata.csv)|[metadata list](./nx12/std_v0.6/rapl_DynPower_model_metadata.csv)
