@@ -2,7 +2,7 @@
 
 | processor | cores | chips | memory | frequency |
 | --- | --- | --- | --- | --- |
-| Intel_Xeon_E5_4607 | 24.0 | 4.0 | 60.0 | 2200.0 |
+| intel_xeon_8480+ | 56.0 | 1.0 | 256.0 | 2000.0 |
 
 [With local estimator](#with-local-estimator)
 
@@ -14,12 +14,11 @@
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | ExponentialRegressionTrainer_209 | 9.78 | 3.4 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/ExponentialRegressionTrainer_209.json |
+| BPFOnly | LogisticRegressionTrainer_209 | 1.64 | 0.5 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/LogisticRegressionTrainer_209.json |
 ### acpi DynPower model
 
-| Feature group | Model name | MAE | MAPE (%) | URL |
-| --- | --- | --- | --- | --- |
-| BPFOnly | ExponentialRegressionTrainer_209 | 13.17 | 17.5 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/ExponentialRegressionTrainer_209.json |
+No model available
+
 ### intel_rapl AbsPower model
 
 No model available
@@ -34,12 +33,12 @@ No model available
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | ExponentialRegressionTrainer_209 | 9.78 | 3.4 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/ExponentialRegressionTrainer_209.zip |
+| BPFOnly | LogisticRegressionTrainer_209 | 1.64 | 0.5 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/LogisticRegressionTrainer_209.zip |
 ### acpi DynPower model
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | PolynomialRegressionTrainer_209 | 8.49 | 5.8 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/PolynomialRegressionTrainer_209.zip |
+| BPFOnly | PolynomialRegressionTrainer_209 | 26.43 | 16.2 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/PolynomialRegressionTrainer_209.zip |
 ### intel_rapl AbsPower model
 
 No model available

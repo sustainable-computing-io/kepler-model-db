@@ -2,7 +2,7 @@
 
 | processor | cores | chips | memory | frequency |
 | --- | --- | --- | --- | --- |
-| AMD_Opteron_4310_EE | 8.0 | 2.0 | 32.0 | 2200.0 |
+| amd_epyc_7713 | 128.0 | 2.0 | 256.0 | 2000.0 |
 
 [With local estimator](#with-local-estimator)
 
@@ -14,12 +14,12 @@
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | SGDRegressorTrainer_310 | 1.11 | 1.3 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/SGDRegressorTrainer_310.json |
+| BPFOnly | LogarithmicRegressionTrainer_310 | 4.41 | 1.1 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/LogarithmicRegressionTrainer_310.json |
 ### acpi DynPower model
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | ExponentialRegressionTrainer_310 | 1.66 | 8.2 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/ExponentialRegressionTrainer_310.json |
+| BPFOnly | LogisticRegressionTrainer_310 | 4.78 | 1.5 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/LogisticRegressionTrainer_310.json |
 ### intel_rapl AbsPower model
 
 No model available
@@ -34,12 +34,12 @@ No model available
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | SGDRegressorTrainer_310 | 1.11 | 1.3 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/SGDRegressorTrainer_310.zip |
+| BPFOnly | LogarithmicRegressionTrainer_310 | 4.41 | 1.1 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/LogarithmicRegressionTrainer_310.zip |
 ### acpi DynPower model
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | PolynomialRegressionTrainer_310 | 1.49 | 7.7 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/PolynomialRegressionTrainer_310.zip |
+| BPFOnly | LogisticRegressionTrainer_310 | 4.78 | 1.5 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/LogisticRegressionTrainer_310.zip |
 ### intel_rapl AbsPower model
 
 No model available

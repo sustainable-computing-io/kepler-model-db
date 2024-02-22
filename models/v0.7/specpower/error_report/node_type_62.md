@@ -2,7 +2,7 @@
 
 | processor | cores | chips | memory | frequency |
 | --- | --- | --- | --- | --- |
-| AMD_EPYC_8534P | 64.0 | 1.0 | 96.0 | 2300.0 |
+| amd_opteron_6276 | 64.0 | 4.0 | 256.0 | 2300.0 |
 
 [With local estimator](#with-local-estimator)
 
@@ -14,12 +14,12 @@
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | SGDRegressorTrainer_62 | 7.25 | 9.2 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/SGDRegressorTrainer_62.json |
+| BPFOnly | SGDRegressorTrainer_62 | 25.35 | 3.7 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/SGDRegressorTrainer_62.json |
 ### acpi DynPower model
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | ExponentialRegressionTrainer_62 | 6.80 | 10.1 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/ExponentialRegressionTrainer_62.json |
+| BPFOnly | ExponentialRegressionTrainer_62 | 2.56 | 0.7 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/ExponentialRegressionTrainer_62.json |
 ### intel_rapl AbsPower model
 
 No model available
@@ -34,12 +34,12 @@ No model available
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | SGDRegressorTrainer_62 | 7.25 | 9.2 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/SGDRegressorTrainer_62.zip |
+| BPFOnly | KNeighborsRegressorTrainer_62 | 24.44 | 5.8 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/KNeighborsRegressorTrainer_62.zip |
 ### acpi DynPower model
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | GradientBoostingRegressorTrainer_62 | 2.62 | 6.8 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/GradientBoostingRegressorTrainer_62.zip |
+| BPFOnly | ExponentialRegressionTrainer_62 | 2.56 | 0.7 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/ExponentialRegressionTrainer_62.zip |
 ### intel_rapl AbsPower model
 
 No model available

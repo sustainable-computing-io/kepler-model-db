@@ -1,1 +1,1 @@
-{"platform": {"All_Weights": {"Categorical_Variables": {}, "Numerical_Variables": {"bpf_cpu_time_ms": {"scale": 16000.0}, "bpf_page_cache_hit": {"scale": 1.0}}, "CurveFit_Weights": [58.170918872378344, 182.20411403206649]}}}
+{"platform": {"All_Weights": {"Categorical_Variables": {}, "Numerical_Variables": {"bpf_cpu_time_ms": {"scale": 16000.0}, "bpf_page_cache_hit": {"scale": 1.0}}, "CurveFit_Weights": [16.89628740692232, 9.949396495959025, 68.18650523535332]}}}
