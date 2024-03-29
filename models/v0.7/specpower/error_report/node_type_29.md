@@ -2,7 +2,7 @@
 
 | processor | cores | chips | memory | frequency |
 | --- | --- | --- | --- | --- |
-| AMD_Opteron_6278 | 64.0 | 4.0 | 64.0 | 2400.0 |
+| intel_xeon_e5472 | 8.0 | 2.0 | 16.0 | 3000.0 |
 
 [With local estimator](#with-local-estimator)
 
@@ -14,12 +14,11 @@
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | SGDRegressorTrainer_29 | 7.18 | 2.6 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/SGDRegressorTrainer_29.json |
+| BPFOnly | LogarithmicRegressionTrainer_29 | 15.62 | 6.7 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/LogarithmicRegressionTrainer_29.json |
 ### acpi DynPower model
 
-| Feature group | Model name | MAE | MAPE (%) | URL |
-| --- | --- | --- | --- | --- |
-| BPFOnly | SGDRegressorTrainer_29 | 5.78 | 1.9 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/SGDRegressorTrainer_29.json |
+No model available
+
 ### intel_rapl AbsPower model
 
 No model available
@@ -34,12 +33,12 @@ No model available
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | PolynomialRegressionTrainer_29 | 3.72 | 1.1 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/PolynomialRegressionTrainer_29.zip |
+| BPFOnly | LogarithmicRegressionTrainer_29 | 15.62 | 6.7 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/AbsPower/BPFOnly/LogarithmicRegressionTrainer_29.zip |
 ### acpi DynPower model
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| BPFOnly | GradientBoostingRegressorTrainer_29 | 2.29 | 0.9 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/GradientBoostingRegressorTrainer_29.zip |
+| BPFOnly | XgboostFitTrainer_29 | 5.62 | 4.9 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/specpower/acpi/DynPower/BPFOnly/XgboostFitTrainer_29.zip |
 ### intel_rapl AbsPower model
 
 No model available
