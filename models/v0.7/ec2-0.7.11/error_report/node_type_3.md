@@ -38,10 +38,11 @@ No model available
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| CounterOnly | LogarithmicRegressionTrainer_3 | 18.26 | 3.9 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterOnly/LogarithmicRegressionTrainer_3.json |
-| BPFOnly | SGDRegressorTrainer_3 | 71.59 | 11.8 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFOnly/SGDRegressorTrainer_3.json |
-| CounterIRQCombined | SGDRegressorTrainer_3 | 25.25 | 4.5 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterIRQCombined/SGDRegressorTrainer_3.json |
-| BPFIRQ | SGDRegressorTrainer_3 | 77.01 | 9.4 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFIRQ/SGDRegressorTrainer_3.json |
+| CounterOnly | SGDRegressorTrainer_3 | 10.72 | 3.3 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterOnly/SGDRegressorTrainer_3.json |
+| BPFOnly | SGDRegressorTrainer_3 | 59.64 | 17.4 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFOnly/SGDRegressorTrainer_3.json |
+| CounterIRQCombined | SGDRegressorTrainer_3 | 16.23 | 4.7 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterIRQCombined/SGDRegressorTrainer_3.json |
+| Basic | SGDRegressorTrainer_3 | 11.31 | 4.6 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/Basic/SGDRegressorTrainer_3.json |
+| BPFIRQ | SGDRegressorTrainer_3 | 67.67 | 12.8 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFIRQ/SGDRegressorTrainer_3.json |
 ### rapl-sysfs DynPower model
 
 No model available
@@ -92,17 +93,18 @@ No model available
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| CounterOnly | KNeighborsRegressorTrainer_3 | 8.84 | 2.5 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterOnly/KNeighborsRegressorTrainer_3.zip |
-| BPFOnly | GradientBoostingRegressorTrainer_3 | 14.76 | 6.8 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFOnly/GradientBoostingRegressorTrainer_3.zip |
-| CounterIRQCombined | KNeighborsRegressorTrainer_3 | 6.06 | 2.8 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterIRQCombined/KNeighborsRegressorTrainer_3.zip |
-| BPFIRQ | KNeighborsRegressorTrainer_3 | 17.13 | 4.0 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFIRQ/KNeighborsRegressorTrainer_3.zip |
+| CounterOnly | XgboostFitTrainer_3 | 4.25 | 0.9 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterOnly/XgboostFitTrainer_3.zip |
+| BPFOnly | GradientBoostingRegressorTrainer_3 | 19.37 | 5.4 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFOnly/GradientBoostingRegressorTrainer_3.zip |
+| CounterIRQCombined | XgboostFitTrainer_3 | 4.61 | 1.9 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterIRQCombined/XgboostFitTrainer_3.zip |
+| Basic | PolynomialRegressionTrainer_3 | 8.54 | 3.1 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/Basic/PolynomialRegressionTrainer_3.zip |
+| BPFIRQ | XgboostFitTrainer_3 | 26.38 | 6.4 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFIRQ/XgboostFitTrainer_3.zip |
 ### rapl-sysfs DynPower model
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| CounterOnly | XgboostFitTrainer_3 | 6.50 | 46.3 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/CounterOnly/XgboostFitTrainer_3.zip |
-| BPFOnly | XgboostFitTrainer_3 | 19.51 | 15.1 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/BPFOnly/XgboostFitTrainer_3.zip |
-| CounterIRQCombined | GradientBoostingRegressorTrainer_3 | 10.86 | 8.6 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/CounterIRQCombined/GradientBoostingRegressorTrainer_3.zip |
+| CounterOnly | KNeighborsRegressorTrainer_3 | 8.05 | 74.0 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/CounterOnly/KNeighborsRegressorTrainer_3.zip |
+| CounterIRQCombined | PolynomialRegressionTrainer_3 | 8.41 | 68.9 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/CounterIRQCombined/PolynomialRegressionTrainer_3.zip |
+| Basic | GradientBoostingRegressorTrainer_3 | 3.53 | 25.7 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/Basic/GradientBoostingRegressorTrainer_3.zip |
 ### redfish AbsPower model
 
 No model available
