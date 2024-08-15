@@ -1,4 +1,4 @@
-# ec2-0.7.11 on v0.7 Build
+# ec2-0.7.11 on v0.7.11 Build
 
 MAE Threshold = 10, MAPE Threshold = 20%
 

@@ -38,17 +38,18 @@ No model available
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| CounterOnly | LogarithmicRegressionTrainer_1 | 5.87 | 6.2 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterOnly/LogarithmicRegressionTrainer_1.json |
-| BPFOnly | LogarithmicRegressionTrainer_1 | 6.62 | 17.6 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFOnly/LogarithmicRegressionTrainer_1.json |
-| CounterIRQCombined | LogarithmicRegressionTrainer_1 | 6.74 | 4.6 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterIRQCombined/LogarithmicRegressionTrainer_1.json |
-| BPFIRQ | LogarithmicRegressionTrainer_1 | 6.96 | 16.9 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFIRQ/LogarithmicRegressionTrainer_1.json |
+| CounterOnly | LogarithmicRegressionTrainer_1 | 12.01 | 6.1 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterOnly/LogarithmicRegressionTrainer_1.json |
+| BPFOnly | LogarithmicRegressionTrainer_1 | 5.76 | 15.8 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFOnly/LogarithmicRegressionTrainer_1.json |
+| CounterIRQCombined | LogarithmicRegressionTrainer_1 | 6.88 | 6.5 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterIRQCombined/LogarithmicRegressionTrainer_1.json |
+| Basic | LogarithmicRegressionTrainer_1 | 6.44 | 7.8 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/Basic/LogarithmicRegressionTrainer_1.json |
+| BPFIRQ | LogarithmicRegressionTrainer_1 | 8.62 | 18.1 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFIRQ/LogarithmicRegressionTrainer_1.json |
 ### rapl-sysfs DynPower model
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| CounterOnly | LogarithmicRegressionTrainer_1 | 8.74 | 91.3 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/CounterOnly/LogarithmicRegressionTrainer_1.json |
-| BPFOnly | SGDRegressorTrainer_1 | 28.54 | 19.9 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/BPFOnly/SGDRegressorTrainer_1.json |
-| CounterIRQCombined | LogarithmicRegressionTrainer_1 | 4.45 | 50.3 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/CounterIRQCombined/LogarithmicRegressionTrainer_1.json |
+| CounterOnly | LogarithmicRegressionTrainer_1 | 6.43 | 20.3 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/CounterOnly/LogarithmicRegressionTrainer_1.json |
+| CounterIRQCombined | LogarithmicRegressionTrainer_1 | 4.43 | 33.3 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/CounterIRQCombined/LogarithmicRegressionTrainer_1.json |
+| Basic | LogarithmicRegressionTrainer_1 | 11.20 | 19.0 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/Basic/LogarithmicRegressionTrainer_1.json |
 ### redfish AbsPower model
 
 No model available
@@ -95,18 +96,20 @@ No model available
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| CounterOnly | PolynomialRegressionTrainer_1 | 5.03 | 7.1 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterOnly/PolynomialRegressionTrainer_1.zip |
-| BPFOnly | XgboostFitTrainer_1 | 5.25 | 9.2 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFOnly/XgboostFitTrainer_1.zip |
-| CounterIRQCombined | GradientBoostingRegressorTrainer_1 | 3.29 | 4.5 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterIRQCombined/GradientBoostingRegressorTrainer_1.zip |
-| BPFIRQ | XgboostFitTrainer_1 | 3.01 | 4.1 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFIRQ/XgboostFitTrainer_1.zip |
+| CounterOnly | XgboostFitTrainer_1 | 1.51 | 4.4 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterOnly/XgboostFitTrainer_1.zip |
+| BPFOnly | KNeighborsRegressorTrainer_1 | 2.58 | 4.7 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFOnly/KNeighborsRegressorTrainer_1.zip |
+| CounterIRQCombined | PolynomialRegressionTrainer_1 | 3.31 | 2.6 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/CounterIRQCombined/PolynomialRegressionTrainer_1.zip |
+| Basic | GradientBoostingRegressorTrainer_1 | 2.21 | 5.6 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/Basic/GradientBoostingRegressorTrainer_1.zip |
+| BPFIRQ | GradientBoostingRegressorTrainer_1 | 4.85 | 1.9 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/AbsPower/BPFIRQ/GradientBoostingRegressorTrainer_1.zip |
 ### rapl-sysfs DynPower model
 
 | Feature group | Model name | MAE | MAPE (%) | URL |
 | --- | --- | --- | --- | --- |
-| CounterOnly | PolynomialRegressionTrainer_1 | 4.75 | 22.3 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/CounterOnly/PolynomialRegressionTrainer_1.zip |
-| BPFOnly | GradientBoostingRegressorTrainer_1 | 2.94 | 17.2 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/BPFOnly/GradientBoostingRegressorTrainer_1.zip |
-| CounterIRQCombined | GradientBoostingRegressorTrainer_1 | 3.26 | 59.6 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/CounterIRQCombined/GradientBoostingRegressorTrainer_1.zip |
-| BPFIRQ | GradientBoostingRegressorTrainer_1 | 5.16 | 18.5 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/BPFIRQ/GradientBoostingRegressorTrainer_1.zip |
+| CounterOnly | PolynomialRegressionTrainer_1 | 4.58 | 11.1 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/CounterOnly/PolynomialRegressionTrainer_1.zip |
+| BPFOnly | GradientBoostingRegressorTrainer_1 | 3.04 | 15.9 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/BPFOnly/GradientBoostingRegressorTrainer_1.zip |
+| CounterIRQCombined | LogarithmicRegressionTrainer_1 | 4.43 | 33.3 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/CounterIRQCombined/LogarithmicRegressionTrainer_1.zip |
+| Basic | PolynomialRegressionTrainer_1 | 2.00 | 70.3 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/Basic/PolynomialRegressionTrainer_1.zip |
+| BPFIRQ | XgboostFitTrainer_1 | 3.34 | 13.2 | https://raw.githubusercontent.com/sustainable-computing-io/kepler-model-db/main/models/v0.7/ec2-0.7.11/rapl-sysfs/DynPower/BPFIRQ/XgboostFitTrainer_1.zip |
 ### redfish AbsPower model
 
 No model available
